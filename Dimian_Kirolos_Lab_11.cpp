@@ -1,5 +1,3 @@
-NOT DONE YET, MUST ASK IF " Initialize the array so that the first 25 components are equal to the square of the counter (or index) variable and the last 25 
-components are equal to 3 times the index variable." APPLIES TO THE OTHER PARTS
 // Kirolos Dimian
 // Lab 11
 // 11/12/24
@@ -19,14 +17,15 @@ using namespace std;
 
 int main () // Making function main
 {
+    
+    // Parts 1 and 2 
 	const int ARRAY_SIZE = 50; // To make the size of the array 50
 	double alpha[ARRAY_SIZE]; // To make the array be named alpha
 
     int i = 0; // creates an int i to be equal to 0 (acts as a counter)
     
-    // Parts 1 and 2 
     cout << endl; // skips a line for organization
-    cout << "Parts 1 & 2" << endl; // To specify which parts to avoid confusion
+    cout << "Parts 1 and 2" << endl; // To specify which parts to avoid confusion
     cout << endl; // skips a line for organization
 
     for (i = 0; i < 25; i++) // creating a for loop for it to skip lines
@@ -66,7 +65,7 @@ int main () // Making function main
 
     for (int s = 0; s < Size_Of_ARRAY; s++) // for loop to print the array
     {
-        new_Array[s] = (rand() % 100) + 1; // random number between 1 and 100
+        new_Array[s] = (rand() % 100) + 1; // the random number generator function being a value in the array and also including 100 as a value
         sum_Of_Scores += new_Array[s]; // constantly adds the random number to the sum variable so at the end, the variable has the total score
 
         if (new_Array [s] == 100) // makes an if statement so that each time it runs, if the random number is exactly equal to 100
